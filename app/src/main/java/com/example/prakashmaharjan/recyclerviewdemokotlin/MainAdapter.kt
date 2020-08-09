@@ -8,8 +8,8 @@ import kotlinx.android.synthetic.main.row_layout.view.*
 
 class MainAdapter: RecyclerView.Adapter<CustomViewHolder>(){
 
+    var listArray =listOf<String>("Android 1.0", "Petit Four", "Cupcake", "Donut", "Eclair", "Froyo", "Gingerbread", "Honeycomb", "Ice Cream Sandwich", "Jelly Bean", "Kitkat", "Lollipop","Marshmallow", "Nougat", "Oreo", "Pie")
 
-    var listArray = listOf<String>("Hello", "world", "Hi", "People", "Hey")
     // number of items or rows
     override fun getItemCount(): Int {
         //return  4
@@ -19,7 +19,7 @@ class MainAdapter: RecyclerView.Adapter<CustomViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
         //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-        val layoutInflater = LayoutInflater.from(parent?.context)
+        val layoutInflater = LayoutInflater.from(parent.context)
         val cellForRow = layoutInflater.inflate(R.layout.row_layout, parent, false)
         return  CustomViewHolder(cellForRow)
     }
