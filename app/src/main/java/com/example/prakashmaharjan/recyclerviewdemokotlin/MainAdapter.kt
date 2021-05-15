@@ -26,12 +26,13 @@ class MainAdapter : RecyclerView.Adapter<CustomViewHolder>() {
         "Oreo",
         "Pie",
         "Android 10",
-        "Android 11"
+        "Android 11",
+        "Android 12"
     )
 
     // number of items or rows
     override fun getItemCount(): Int {
-        //return  4
+        //return item count
         return listArray.size
 
     }
