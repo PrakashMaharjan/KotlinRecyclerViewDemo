@@ -1,14 +1,16 @@
 package com.example.prakashmaharjan.recyclerviewdemokotlin
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.row_layout.view.*
+import android.widget.TextView
+
+//import kotlinx.android.synthetic.main.row_layout.view.*
 
 class MainAdapter : RecyclerView.Adapter<CustomViewHolder>() {
 
-    var listArray = listOf<String>(
+    private var listArray = listOf<String>(
         "Android 1.0",
         "Petit Four",
         "Cupcake",
@@ -25,9 +27,12 @@ class MainAdapter : RecyclerView.Adapter<CustomViewHolder>() {
         "Nougat",
         "Oreo",
         "Pie",
-        "Android 10",
-        "Android 11",
-        "Android 12"
+        "Quince Tart",
+        "Red Velvet Cake",
+        "Snow Cone",
+        "Tiramisu",
+        "Upside Down Cake",
+        "Vanilla Ice Cream"
     )
 
     // number of items or rows
@@ -48,11 +53,10 @@ class MainAdapter : RecyclerView.Adapter<CustomViewHolder>() {
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 
-        // holder?.view.TitleTextViewID.text = "12345"
-
         val title = listArray.get(position)
-
-        holder?.view.TitleTextViewID.text = title
+        //holder?.view.TitleTextViewID.text = title
+        val titleTextV: TextView = holder.view.findViewById(R.id.TitleTextViewID)
+        titleTextV.text = title
     }
 }
 
