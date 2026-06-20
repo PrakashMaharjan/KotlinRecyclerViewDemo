@@ -32,7 +32,8 @@ class MainAdapter : RecyclerView.Adapter<CustomViewHolder>() {
         "Snow Cone",
         "Tiramisu",
         "Upside Down Cake",
-        "Vanilla Ice Cream"
+        "Vanilla Ice Cream",
+        "Baklava"
     )
 
     // number of items or rows

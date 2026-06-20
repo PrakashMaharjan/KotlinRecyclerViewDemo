@@ -1,13 +1,22 @@
+# Built application files
+*.apk
+*.aab
+
+# Build caches & outputs
+**/build/
+.gradle/
+.kotlin/
+.externalNativeBuild/
+.cxx/
+
+# IDE files
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+local.properties
+
+# Logs/Caches
+*.log
+*.hprof
 .DS_Store
-/build
 /captures
-.externalNativeBuild
+
